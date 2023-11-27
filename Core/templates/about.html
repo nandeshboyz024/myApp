@@ -1,0 +1,17 @@
+{% extends "./home.html" %}
+{% load static %}
+{% block Title %}
+    About
+{% endblock Title %}
+
+{% block Content %}
+    <h1 style='text-align: center;'>Introduction to Image Classification</h1>
+    <p align="justify" >Can you know that a computer can tell us which digit we have written by looking at it? But how ? Imagine you have a bunch of pictures, like photos of cats, and dogs. Now, image classification is like teaching acomputer to recognize which picture is of a cat and which one is of a dog.</p>  
+    <h2>How Computers See</h2>
+    <p align="justify" >Imagine the computer is like a super smart friend with special eyes that can look at pictures. But this friend does not know what things are, like cats or dogs. So, you get to teach them! <br> you show your friend lots of pictures and say, "Look, this is a cat and this is a dog." The computer learns what makes a cat look like a cat and what make a dog like a dog based on ears, tails, and fur patterns. Now, when you show the computer a new picture, it tries to decide if it is a cat or dog based on what it learned.</p>
+    <center>
+        <img src="{% static 'images/intro.png' %}" alt="Image place" width="800" height="400" srcset="">
+    </center>
+{% endblock Content %}
+
+

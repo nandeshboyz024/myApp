@@ -1,0 +1,17 @@
+{% extends "./home.html" %}
+{% load static %}
+{% block Title %}
+    Train
+{% endblock Title %}
+
+{% block Content %}
+    <h1 style='text-align: center;'>Train Your Model</h1>
+    <p align="justify" >For teaching your friend computer to recognize your handwritten numbers, like the ones you draw on paper, first, you show your friend lots of examples of the numbers you have written, telling it, "This is the number 5, and this is how I draw it. Now, your friend practices looking at all these examples and learns to understand the special shapes and lines that make each number unique. Once your friend feels confident, you give it a new drawing, and it happiliy shouts out the number it thinks you wrote!" </p>
+    <h2>Train The Network</h2>
+    <p align="justify" >Your friend computer has a smart brain. It has two parts: one for understanding the features of the numbers (like curves and lines), and another for making predictions. It teach itself using a special set of pictures ( train data) and their labels to get better at recognizing the numbers. It does this training process for a maximum of 20 times(epochs), adjusting and improving each time. It uses a learing rate of 0.1, which helps it decide to change itself during each learning step to make a better prediction.</p>
+    <center>
+        <img src="{% static 'images/m1.png' %}" alt="Image place" width="600" height="600" srcset="">
+    </center>
+{% endblock Content %}
+
+

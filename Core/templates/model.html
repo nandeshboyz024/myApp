@@ -1,0 +1,17 @@
+{% extends "./home.html" %}
+{% load static %}
+{% block Title %}
+    Model
+{% endblock Title %}
+
+{% block Content %}
+<h1 style='text-align: center;'>Build Your Own Model</h1>
+    <p align="justify" >Building your own model is like training your magical friend to recognize hand-written numbers. You show it lots of examples, and it learns to guess the right number when you draw something new. It's like having a drawing detective friend!</p>
+    <h2>Design a Neural Network</h2>
+    <p align="justify" >Your friend first looks at your drawing, which is a picture made up of tiny dots, just like the pixels on your computer screen. Your friend has such a brain where are hidden helpers (neurons) that work together. Each helper is like a detective looking for specific things in your drawing, like curves, lines or corners. Before becoming a super smart friend, it needs some training. You show it many drawings of numbers. and each time, it adjusts its helpers to get better at recognizing patterns. Now, when you draw a new number, it's helpers quickly analyze the drawing and vote on what they think it is. The most votes decide what your friend predicts! If your friend makes a correct prediction, it cheers, "Yay, I got it right!" If not, It learns from the mistake so it can do better next time.</p>
+    <center>
+        <img src="{% static 'images/model.png' %}" alt="Image place" width="800" height="400" srcset="">
+    </center>
+{% endblock Content %}
+
+

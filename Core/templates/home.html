@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>
+        {% block Title %}
+        Home
+        {% endblock Title %}
+    </title>
+    <link rel="stylesheet" href="{% static 'css/bootstrap.css' %}">
+
+</head>
+<body>
+    <div class="bdr">
+        <hr class="border-light">
+        <nav class="nav flex-column text-center">
+            <a href="{% url 'about' %}" class="nav-link">About</a>
+            <a href="{% url 'dataset' %}" class="nav-link">Dataset</a>
+            <a href="{% url 'model' %}" class="nav-link">Model</a>
+            <a href="{% url 'train' %}" class="nav-link">Train</a>
+            <a href="{% url 'predict' %}" class="nav-link">Predict</a>
+        </nav>
+    </div>
+    {% block Content %}
+
+    {% endblock Content %}
+
+    <script src="{% static 'js/bootstrap.min.js' %}"></script>
+    <script src="{% static 'js/jquery.js' %}"></script>
+    <script src="{% static 'js/proper.js' %}"></script>
+</body>
+</html>

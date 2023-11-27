@@ -1,0 +1,24 @@
+{% extends "./home.html" %}
+{% load static %}
+<style>
+    #hiddenText {
+      display: none;
+    }
+</style>
+{% block Title %}
+    Dataset
+{% endblock Title %}
+
+{% block Content %}
+    <h1 style='text-align: center;'>Create Your Own Dataset</h1>
+    <p>We want to teach our computer friend to recognize handwritten numbers from 0 to 9. We'll show it many examples of each digit and tell it, "This is how I write 0, 1, 2, and so on." Once our computer friend learns, we can give it a new handwritten number, and it will happily tell us which digit it thinks it is!</p>
+    <h2>MNIST</h2>
+    <p align="justify" >Imagine MNIST is like a big collection of pictures of handwritten numbers. It's like a special album that helps computers learn how to recognize numbers written by people. So, when a computer looks at these pictures from MNIST, it learns to tell which number is in each picture, just like you learn to recognize different letters and numbers in school!</p>
+    <p align="justify" >Here, Your friend have such an album which contains pictures of handwritten digits. But he is not opened it yet. You can see some pictures by click on VISUALIZE DATA</p>
+    <p>Album (MNIST) has a collection of <b>{{size}}</b> pictures.</p>
+    <center>
+    <img src="{% static 'images/output_plot.png' %}" alt="Image place" width="360" height="360" srcset="">
+    </center>
+{% endblock Content %}
+
+
